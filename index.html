@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Digital Clock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex transition-colors duration-300 relative">
+  
+  <main class="flex-1 ml-0 flex items-center justify-center p-4  ">
+    
+    <button id="theme-toggle" 
+      class="fixed bottom-4 right-4 px-4 py-2 bg-blue-600 text-white rounded-2xl shadow hover:bg-blue-700 transition z-30">
+      Switch Theme
+    </button>
+
+    <div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-8 rounded-xl shadow-lg   text-center transition-colors duration-300">
+      <p id="time" class="text-5xl sm:text-6xl md:text-7xl font-mono mb-4">12:00:00</p>
+      <p id="date" class="text-lg sm:text-xl md:text-2xl">Mon, 01 Jan 2024</p>
+    </div>
+
+        
+  </main>
+
+  <script src="clock.js"></script>
+    
+
+</body>
+</html>
